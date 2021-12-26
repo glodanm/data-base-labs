@@ -17,11 +17,11 @@ public class TrainingType {
     @Column(name = "type", length = 45)
     private String type;
     @Column(name = "number_of_sets")
-    private String number_of_sets;
+    private Integer number_of_sets;
     @Column(name = "numbers_of_days")
     private Integer numbers_of_days;
 
-    public TrainingType(Integer id, String type, String number_of_sets, Integer numbers_of_days) {
+    public TrainingType(Integer id, String type, Integer number_of_sets, Integer numbers_of_days) {
         this.id = id;
         this.type = type;
         this.number_of_sets = number_of_sets;

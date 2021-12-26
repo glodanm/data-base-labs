@@ -28,7 +28,7 @@ public class Client {
     private Integer training_type_id;
 
     public Client(Integer id, String first_name, String second_name,
-                  String email, String phone_number,Integer training_type_id){
+                  String email, String phone_number, Integer training_type_id){
         this.id=id;
         this.first_name=first_name;
         this.second_name=second_name;
