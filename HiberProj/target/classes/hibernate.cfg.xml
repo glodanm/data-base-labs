@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/lab_1</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">glodan123</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+
+        <mapping class="com.database.iot.model.entities.Client"/>
+        <mapping class="com.database.iot.model.entities.ClientWithTrainer"/>
+        <mapping class="com.database.iot.model.entities.Exercise"/>
+        <mapping class="com.database.iot.model.entities.FitnessMachine"/>
+        <mapping class="com.database.iot.model.entities.Gym"/>
+        <mapping class="com.database.iot.model.entities.Trainer"/>
+        <mapping class="com.database.iot.model.entities.TrainingType"/>
+    </session-factory>
+</hibernate-configuration>
